@@ -1,3 +1,5 @@
+rootProject.name = "BudgetWise"
+
 pluginManagement {
     repositories {
         google {
@@ -19,5 +21,17 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "BugetWise"
 include(":app")
+
+include(":core:ui")
+include(":core:network")
+include(":core:database")
+include(":core:model")
+
+include(":feature:addexpense:data")
+include(":feature:addexpense:domain")
+include(":feature:addexpense:presentation")
+
+include(":feature:history:data")
+include(":feature:history:domain")
+include(":feature:history:presentation")
